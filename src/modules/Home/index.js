@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Categories from '../../components/Categories'
-import FeatureCard from '../../components/FeatureCard'
+//import FeatureCard from '../../components/FeatureCard'
 import Hero from '../../components/Hero'
 import ProductCard from '../../components/ProductCard'
 import Products from '../../components/ProductCard'

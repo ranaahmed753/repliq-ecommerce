@@ -125,7 +125,7 @@ const Cart = () => {
               <span>Total cost</span>
               <span>${(total + 10).toFixed(2)}</span>
             </div>
-            <button className="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
+            <button className="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full" onClick={() => alert('You have to login first')}>Checkout</button>
           </div>
         </div>
 
