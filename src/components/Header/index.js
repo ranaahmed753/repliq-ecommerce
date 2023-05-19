@@ -10,14 +10,14 @@ const navigations = [
     name: 'Products',
     path: '/products'
   },
-  {
-    name: 'About',
-    path: '/about'
-  },
-  {
-    name: 'Contact',
-    path: '/contact'
-  }
+  // {
+  //   name: 'About',
+  //   path: '/about'
+  // },
+  // {
+  //   name: 'Register',
+  //   path: '/register'
+  // }
 ]
 
 const Header = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -10,9 +10,16 @@ import CategoryProducts from './modules/CategoryProducts';
 import Cart from './modules/Cart';
 import Register from './modules/Register';
 import { useUser } from './context/AuthContext';
+//import Login from './modules/Login';
 
 function App() {
-  const { user } = useUser()
+  const { getUser } = useUser()
+  const [user, setUser] = useState(null)
+  useEffect(() => {
+    const fetchedUser = getUser()
+    setUser(fetchedUser)
+    console.log(fetchedUser)
+  }, [getUser])
   return (
     <div>
       {
@@ -28,7 +35,10 @@ function App() {
           </Routes>
           <Footer />
         </> : <>
-          <Register />
+          <Routes>
+            <Route path='/register' element={<Register />} />
+          </Routes>
+          {/* <Register /> */}
         </>
 
 
