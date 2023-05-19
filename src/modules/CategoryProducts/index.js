@@ -13,7 +13,7 @@ const CategoryProducts = () => {
       setProducts(data)
     }
     fetchProducts()
-  }, [])
+  }, [name])
 
   if (products.length === 0) return <div>Loading.....</div>
 

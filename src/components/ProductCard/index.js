@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ const ProductCard = ({ products = [] }) => {
           {
             products.map((product) => {
               console.log(product, 'product')
-              const { id, title, price, description, category, image } = product;
+              const { id, title, price, category, image } = product;
               return (
                 <Link to={`/products/${id}`} className="lg:w-[23%] md:w-1/2 p-4 w-full mb-4 cursor-pointer rounded-lg shadow ml-4">
                   <a className="block relative h-48 rounded overflow-hidden">

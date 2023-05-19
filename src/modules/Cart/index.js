@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 const Cart = () => {
   const navigate = useNavigate()
   const [total, setTotal] = useState(0)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const carts = JSON.parse(localStorage.getItem('cart')) || []
 
   useEffect(() => {
